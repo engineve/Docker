@@ -17,3 +17,5 @@ docker create  // container id
 docker start -a container id // print
 
 docker system prune // delete stopped containers, cache, dangling images etc
+
+docker logs <container-id> // print out already ran process
