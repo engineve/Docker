@@ -15,3 +15,5 @@ docker run // create, start
 docker create  // container id 
 
 docker start -a container id // print
+
+docker system prune // delete stopped containers, cache, dangling images etc
