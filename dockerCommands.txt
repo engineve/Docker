@@ -19,3 +19,8 @@ docker start -a container id // print
 docker system prune // delete stopped containers, cache, dangling images etc
 
 docker logs <container-id> // print out already ran process
+
+docker stop <container-id> // try to stop, after 10 seconds docker kill the container
+
+docker kill <container-id> // immediately stop
+

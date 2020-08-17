@@ -1,1 +1,12 @@
+redis-server // after installing without docker
+
+redis-cli
+
+set test 5
+get test // 5
+
 docker run -it redis
+
+docker exec -it <container-id> redis-cli // exec is for another command
+
+-i for terminal input to linux STDIN, -t for linux STDOUT to terminal 
