@@ -3,3 +3,9 @@ sudo systemctl start docker
 sudo chmod +x /usr/local/bin/docker-compose  // executable
 
 docker-compose
+
+docker images
+
+docker info | grep -i root   // root directory
+
+sudo du -sh /var/lib/docker    // du -> disk usage
