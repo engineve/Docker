@@ -24,3 +24,5 @@ docker stop <container-id> // try to stop, after 10 seconds docker kill the cont
 
 docker kill <container-id> // immediately stop
 
+docker exec -it <container-id> sh  // starts # shell
+
