@@ -26,3 +26,5 @@ docker kill <container-id> // immediately stop
 
 docker exec -it <container-id> sh  // starts # shell
 
+docker run -it <image> sh // using shell, starts a image
+
