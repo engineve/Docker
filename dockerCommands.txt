@@ -34,3 +34,5 @@ Dockerfile -> docker build .   // . is build context
 docker build -t <docker-id>/<project-name>:latest  // tagging the image you made
 
 // --> docker run <docker-id>/<project-name>
+
+docker run -p <port> : <port in container> <image-id> // port mapping
