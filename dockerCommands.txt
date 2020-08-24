@@ -40,3 +40,5 @@ docker run -p <port> : <port in container> <image-id> // port mapping
 docker-compose up // docker run <image>
 
 docker-compose up --build // docker build . and docker run <image>
+
+docker-compose run <service-name on docker-compose.yml> sh -c 'django-admin.py startproject <project-name> app .'  // using shell, put command after 'sh'
