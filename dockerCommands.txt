@@ -36,3 +36,7 @@ docker build -t <docker-id>/<project-name>:latest  // tagging the image you made
 // --> docker run <docker-id>/<project-name>
 
 docker run -p <port> : <port in container> <image-id> // port mapping
+
+docker-compose up // docker run <image>
+
+docker-compose up --build // docker build . and docker run <image>
