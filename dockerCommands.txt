@@ -42,3 +42,10 @@ docker-compose up // docker run <image>
 docker-compose up --build // docker build . and docker run <image>
 
 docker-compose run <service-name on docker-compose.yml> sh -c 'django-admin.py startproject <project-name> app .'  // using shell, put command after 'sh'
+
+
+docker stop <container-id>
+
+docker-compose up -d // run containers in background
+
+docker-compose down // stop containers
