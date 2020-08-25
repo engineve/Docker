@@ -49,3 +49,5 @@ docker stop <container-id>
 docker-compose up -d // run containers in background
 
 docker-compose down // stop containers
+
+docker-compose ps // search docker-compose.yml on current directory and find running containers that belong to the file
