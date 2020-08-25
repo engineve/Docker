@@ -12,4 +12,8 @@ sudo du -sh /var/lib/docker    // du -> disk usage
 
 sudo chown USER[:GROUP] FILE // change owner of the FILE to USER(GROUP)
 
-echo 'Current data and time is $(data)'
+echo 'Current time is $(date)'
+
+NAME=tester
+
+echo 'Hey, $(NAME), Current date is $(date)'
