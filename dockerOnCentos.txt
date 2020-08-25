@@ -17,3 +17,8 @@ echo 'Current time is $(date)'
 NAME=tester
 
 echo 'Hey, $(NAME), Current date is $(date)'
+
+
+echo 'Hey, $(NAME), Current date is $(date)' > /tmp
+
+cat /tmp    // Hey, tester, Current date is Tue Aug 25 14:30:21 UTC 2020
