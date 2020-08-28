@@ -51,3 +51,8 @@ docker-compose up -d // run containers in background
 docker-compose down // stop containers
 
 docker-compose ps // search docker-compose.yml on current directory and find running containers that belong to the file
+
+
+docker run --name <mysql-container> -e MYSQL_ROOT_PASSWORD=<password> -d mysql:tag  // tag is for mysql version
+
+docker run --name <mysql-container> -v <host-volume>:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=<password> -d mysql:tag
