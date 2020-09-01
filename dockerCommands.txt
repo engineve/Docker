@@ -56,3 +56,5 @@ docker-compose ps // search docker-compose.yml on current directory and find run
 docker run --name <mysql-container> -e MYSQL_ROOT_PASSWORD=<password> -d mysql:tag  // tag is for mysql version
 
 docker run --name <mysql-container> -v <host-volume>:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=<password> -d mysql:tag
+
+docker build -f Dockerfile.dev // -f is for specific file to build
