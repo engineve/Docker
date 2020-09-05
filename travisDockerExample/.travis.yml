@@ -1,0 +1,13 @@
+sudo: required # superuser permission
+services: # docker needs to be pre-installed, travis will install docker
+  - docker
+
+before_install: # -t : tagging  docker-username/repository
+  - docker build -t docker-username/repository -f Dockerfile.dev .
+
+script: # after npm run test, it needs to exit -->  -- --coverage
+  - docker run docker-username/repository npm run test -- --coverage
+
+# script:  #  jest library changed with create react app
+#   - docker run -e CI=true USERNAME/repository npm run test
+
