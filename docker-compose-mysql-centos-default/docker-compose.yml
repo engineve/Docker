@@ -6,7 +6,7 @@ services:
     build: # as image doesn't exist
       context: centos7  # directory Dockerfile located, use the Dockerfile to build
     networks:
-      - net # to allower communication  between services
+      - net # to allow communication between services
   db_mysql:
     container_name: database
     image: mysql:5.7 
