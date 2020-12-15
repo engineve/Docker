@@ -66,3 +66,7 @@ docker-compose run --rm <app-name> sh -c <commands> // in django, after commands
 docker-compose run --rm <command> // after command, delete container to save some space
 
 docker attach <container-id>  // connect stdin and stdout for container running at the moment, access to the container
+
+
+docker-compose down && docker-compose up --build
+docker volume rm $(docker volume ls -qf dangling=true)  // for no space left on device
