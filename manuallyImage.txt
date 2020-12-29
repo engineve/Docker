@@ -1,6 +1,6 @@
 docker run  -it alpine sh
 
-# apk  add --update redis
+# apk  add --update redis   // apk is an alpine package manager
 
 docker ps // get the id of the container
 
