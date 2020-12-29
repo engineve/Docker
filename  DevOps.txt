@@ -105,4 +105,4 @@ MSA(Micro Service Architecture)는 비즈니스 민첩성(Business agility)과 �
  
 8. 쿠버네티스에서 Auto Scaling
 
-CPU, memory 사용량에 따른 확장. 컨테이너의 개수를 조정하는 Horizontal Pod Autoscaler(HPA), 컨테이너의 리소스 할당량을 조정하는 Vertical Pod Autoscaler(VPA), 서버 개수를 조정하는 Cluster Autosclaer(CA) 방식이 있음.
+CPU, memory 사용량에 따른 확장. 컨테이너의 개수를 조정하는 Horizontal Pod Autoscaler(HPA), 컨테이너의 리소스 할당량을 조정하는 Vertical Pod Autoscaler(VPA), 서버 개수를 조정하는 Cluster Autoscaler(CA) 방식이 있음.
