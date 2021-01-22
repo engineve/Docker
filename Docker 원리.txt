@@ -1,0 +1,7 @@
+* reference 
+
+https://tech.ssut.me/what-even-is-a-container/
+
+
+Cgroup
+namespace
