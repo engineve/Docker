@@ -31,13 +31,24 @@ docker run -it <image> sh // using shell, starts a image
 Dockerfile -> docker build .   // . is build context
 
 
-docker build -t <docker-id>/<project-name>:latest  // tagging the image you made
+docker build -t <docker-id>/<project-name, image-name>:<tag>  // -t is for tagging the image you made
 
 // --> docker run <docker-id>/<project-name>
 
+docker push <Docker ID>/<Image name>:<tag>   // to Docker Hub
+
+docker pull <Docker ID>/<Image name>:<tag>
+
+docker rmi <image>:<tag>   // to remove the image
+
 docker run -p <port> : <port in container> <image-id> // port mapping
-docker run -it -p <port> : <port in container> <image-id>
+docker run -it --name <Container nickname> -p <port> : <port in container> <image-id>  // --name for container nickname
 docker run [-it] -p <port> : <port in container> -v /<WORKDIR>/node_modules -v $(pwd):/<WORKDIR> <image-id>  // <WORKDIR> references to PWD except node_modules
+
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose up // docker run <image>
 
@@ -45,10 +56,15 @@ docker-compose up --build // docker build . and docker run <image>
 
 docker-compose run <service-name on docker-compose.yml> sh -c 'django-admin.py startproject <project-name> app .'  // using shell, put command after 'sh'
 
+docker-compose --version
 
 docker stop <container-id>
 
 docker-compose up -d // run containers in background
+
+docker images
+
+docker-compose ps
 
 docker-compose down // stop containers
 
