@@ -86,3 +86,12 @@ docker attach <container-id>  // connect stdin and stdout for container running 
 
 docker-compose down && docker-compose up --build
 docker volume rm $(docker volume ls -qf dangling=true)  // for no space left on device
+
+docker build -t --build-arg NODE_VERSION=
+    DOCKERFILE > ARV NODE_VERSION
+
+        ENV : build time + running container
+
+            docker run -d --env PORT=9000 -p 3000:3000
+            
+        ARV : build time only
